@@ -1,0 +1,116 @@
+body {
+    background: url("Table.png") no-repeat center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: center;
+}
+
+.table-container {
+    background-color: rgba(0, 128, 128, 0.9);
+    border: 3px dashed white;
+    border-radius: 30px;
+    padding: auto;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    opacity: 0.8;
+    box-shadow: -10px 10px 50px #00000094;
+}
+
+.table-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin: 20px auto;
+    letter-spacing: 3px;
+}
+
+table {
+    width: 90%; /* Kept as is for responsiveness */
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    border-collapse: collapse;
+    border: 3px dashed white;
+}
+
+th, td {
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    padding: 4px 10px;
+    transition: background-color 0.29s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+th {
+    background-color: rgba(0, 128, 128, 0.9);
+}
+
+th:hover, td:hover {
+    background-color: #fff;
+    color: rgba(0, 128, 128, 0.9);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    z-index: 100;
+}
+
+.ISTIRAHAT {
+    letter-spacing: 20px;
+}
+
+#PAG, #DPPLG-1, #BNG-1, #IPAS-1, #DPPLG-2, #SNM-1, #MTK-1, #ISTIRAHAT-1, #POR, #DPPLG-3, #SNM-2, #IPAS-2, #MTK-2, #SJR, #PPS, #ISTIRAHAT-2, #MTK-3, #DPPLG-4, #BIN-1, #INF, #BIN-2, #BNG-2, #BJW {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    letter-spacing: initial;
+}
+
+td {
+    position: relative;
+}
+
+ td:hover #PAG, td:hover #DPPLG-1, td:hover #BNG-1, td:hover #IPAS-1, td:hover #DPPLG-2, td:hover #SNM-1, td:hover #MTK-1, td:hover #ISTIRAHAT-1, td:hover #POR, td:hover #DPPLG-3, td:hover #SNM-2, td:hover #IPAS-2, td:hover #MTK-2, td:hover #SJR, td:hover #PPS, td:hover #ISTIRAHAT-2, td:hover #MTK-3, td:hover #DPPLG-4, td:hover #BIN-1, td:hover #INF, td:hover #BIN-2, td:hover #BNG-2, td:hover #BJW
+{
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .table-title {
+        font-size: 20px;
+    }
+
+    th, td {
+        padding: 6px 5px;
+    }
+
+    #PAG, #DPPLG-1, #BNG-1, #IPAS-1, #DPPLG-2, #SNM-1, #MTK-1, #ISTIRAHAT-1, #POR, #DPPLG-3, #SNM-2, #IPAS-2, #MTK-2, #SJR, #PPS, #ISTIRAHAT-2, #MTK-3, #DPPLG-4, #BIN-1, #INF, #BIN-2, #BNG-2, #BJW {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-title {
+        font-size: 18px;
+    }
+
+    .table-container {
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 3px 5px;
+    }
+}
