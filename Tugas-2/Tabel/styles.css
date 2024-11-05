@@ -1,6 +1,7 @@
 body {
     background: url("Table.png") center;
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     font-weight: bold;
     overflow: hidden;
